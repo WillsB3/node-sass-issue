@@ -1,0 +1,11 @@
+@mixin my-mixin {
+  html & {
+    @content;
+  }
+}
+
+@include my-mixin {
+	.thing {
+		max-width: 640px;
+	}
+}
